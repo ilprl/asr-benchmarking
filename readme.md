@@ -6,7 +6,7 @@ models for Nepali Language.
 
 ## Documentation
 Model Explored
-- Whisper [docs/whisper](/docs/whisper/readme.md)
+- Whisper [docs/whisper](/docs/whisper.md)
 
 ## Experiments
 
