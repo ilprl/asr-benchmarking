@@ -10,14 +10,14 @@ Whisper’s robustness comes from the scale and diversity of its training data, 
 
 Whisper is available in multiple model sizes, balancing speed and accuracy:
 
-Model	              Parameters	                      Notes
-tiny	                ~39M	                Fastest, lowest accuracy
-base	                ~74M	                Small and efficient
-small	                ~244M	                Good balance between size and accuracy
-medium	              ~769M	                High accuracy
-large               	~1.55B	              Most accurate, multilingual
-large-v2	            ~1.55B	              Improved version of large
-turbo            (via Whisper.cpp)	        Quantized version for fast inference on CPUs
+# Model, Parameter, Notes
+
+tiny, ~39, Fastest, lowest accuracy
+base, ~74M, Small and efficient
+small, ~244M, Good balance between size and accuracy
+medium, ~769M, High accuracy
+large, ~1.55B, Most accurate, multilingual
+large-v2, ~1.55B, Improved version of large
 
 # 🔄 Key Features
 

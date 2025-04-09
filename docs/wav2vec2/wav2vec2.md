@@ -4,7 +4,8 @@
  It learns powerful audio features directly from raw waveforms without requiring transcriptions for    pretraining. The model uses a CNN-based feature encoder, a transformer encoder, and a contrastive learning objective to align masked latent representations with quantized context vectors. 
  
  It achieves state-of-the-art performance on various speech recognition benchmarks with limited labeled data.
-[Original Model](https://github.com/pytorch/fairseq/tree/main/examples/wav2vec)
+
+ [Original Model](https://github.com/pytorch/fairseq/tree/main/examples/wav2vec)
  
  [Original Paper](https://arxiv.org/abs/2006.11477) 
 
