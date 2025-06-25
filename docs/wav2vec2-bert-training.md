@@ -112,6 +112,24 @@ report_to: Specifies where to send logs and metrics (e.g., "wandb", "tensorboard
 ************************************************************************************************************************
 NOTE: Since, the model gave very good results in the first few experiments. Only, the number of epochs were changed for a better result.
 *************************************************************************************************************************
-Experiment 1: 
-Result:
-Notebook link:
+# Minor Experiments
+
+# Experiment 1:
+-Training Arguments changed: 
+           lr = 1e-5
+           epoch = 7
+-Result: WER = 0.34
+-Notebook Link:- [Click Here](/experiment/wav2vec2-bert/wav2vec2-bert-exp-1)
+-Description: Tried a new learning rate, though the training loss doesn't seem to decrease in the beginning, it didn't make a significant difference in final WER as compared to the learning rate of 3e-5
+
+# Experiment 2:
+
+-Whats changed: changed the dataset from this checkpoint [spktsagar/openslr-nepali-asr-cleaned](https://huggingface.co/datasets/spktsagar/openslr-nepali-asr-cleaned) to this checkpoint "[jenrish/nepali-training-data"](https://huggingface.co/datasets/jenrish/nepali-training-data) 
+
+-Result: Validation loss infinity due to flac error. This means some of the data in jenrish is corrupted. Though the corrupted files were handled using exception handling, the model just couldn't learn. 
+
+-Notebook Link:[Click Here](/experiment/wav2vec2-bert/wav2vec2-bert-exp-2)
+
+-Description: This [checkpoint](https://huggingface.co/datasets/spktsagar/openslr-nepali-asr-cleaned) has the nepali numbers changed to devnagari letters(better for ASR). Now, I would recommend anyone to train this model on this jenrish data as a future enhancement of current work.
+
+*************************************************************************************************************************
