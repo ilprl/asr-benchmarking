@@ -38,11 +38,14 @@ The Wav2Vec2-BERT model was proposed in Seamless: Multilingual Expressive and St
 
 --To use it for ASR, Wav2Vec2-BERT can be fine-tuned using Connectionist Temporal Classification ([CTC](https://distill.pub/2017/ctc/)), which is an algorithm that is used to train neural networks for sequence-to-sequence problems, such as ASR and handwriting recognition.
 
+--Wav2Vec2-BERT model is thus accompanied by both a tokenizer, called Wav2Vec2CTCTokenizer, and a feature extractor, called SeamlessM4TFeatureExtractor (Critical NoteC: if you use a different tokenizer and a feature extractor,the model might run, but it won’t "learn" or infer correctly.)
+
 --The aim of this specific documentation is to document all the elements that's needed to train Wav2Vec2-BERT model - more specifically the pre-trained checkpoint [facebook/w2v-bert-2.0](https://huggingface.co/facebook/w2v-bert-2.0) - on ASR tasks, using open-source tools and models.
 
 This amazing tutorial([Cick Here](https://huggingface.co/blog/fine-tune-w2v2-bert)) was taken as reference for fine-tuning wav2vec2-bert on OSLR 54 dataset([Click Here](https://openslr.org/54/)).
 
 I highly recommend anyone willing to try and learn about this model and ASR in general to go through these 3 tutorials
 --For data preprocessing([Click Here](https://www.spktsagar.com/posts/2022/08/finetune-xlsr-nepali/))
---For learning fine tuning pipeline for wav2vec2-BERT[Click Here](https://www.spktsagar.com/posts/2022/08/finetune-xlsr-nepali/)
---For learning about working with audio[Click Here](https://huggingface.co/learn/audio-course/en/chapter0/introduction)
+--For learning fine tuning pipeline for wav2vec2-BERT([Click Here](https://www.spktsagar.com/posts/2022/08/finetune-xlsr-nepali/))
+--For learning about working with audio([Click Here](https://huggingface.co/learn/audio-course/en/chapter0/introduction))
+
