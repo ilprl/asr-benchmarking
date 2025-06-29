@@ -133,3 +133,14 @@ NOTE: Since, the model gave very good results in the first few experiments. Only
 -Description: This [checkpoint](https://huggingface.co/datasets/spktsagar/openslr-nepali-asr-cleaned) has the nepali numbers changed to devnagari letters(better for ASR). Now, I would recommend anyone to train this model on this jenrish data as a future enhancement of current work.
 
 *************************************************************************************************************************
+# Major Experiments
+
+With batch_size = 4 and gradient accumulation of 2, the notebook was trained on 8, 20 and 40 epochs.
+On 8 epochs, WER = 10.67 [Notebook](/experiment/wav2vec2-bert/wav2vec2-bert-exp-3)
+On 20 epochs, WER = 8.7, [Notebook](/experiment/wav2vec2-bert/wav2vec2-bert-exp-4)
+On 40 epochs, WER = 7.8, [Notebook](/experiment/wav2vec2-bert/wav2vec2-bert-exp-5)
+
+
+
+
+
